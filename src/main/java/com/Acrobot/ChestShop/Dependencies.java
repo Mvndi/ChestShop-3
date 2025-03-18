@@ -211,6 +211,9 @@ public class Dependencies implements Listener {
             case ItemBridge:
                 listener = new ItemBridge();
                 break;
+            case MvndiEquipment:
+                listener = new MvndiEquipment();
+                break;
             case ShowItem:
                 MaterialUtil.Show.initialize(plugin);
                 break;
@@ -244,7 +247,8 @@ public class Dependencies implements Listener {
 
         ItemBridge,
 
-        ShowItem;
+        ShowItem,
+        MvndiEquipment;
 
         private final String author;
 
